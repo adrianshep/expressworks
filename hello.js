@@ -8,6 +8,29 @@ app.listen(process.argv[2] || 3000)
 
 /*
 
+Here's the official solution in case you want to compare notes:
+
+────────────────────────────────────────────────────────────────────────────────
+    var express = require('express')
+    var app = express()
+    app.get('/home', function(req, res) {
+      res.end('Hello World!')
+    })
+    app.listen(process.argv[2])
+
+────────────────────────────────────────────────────────────────────────────────
+
+Alternative solution:
+
+var express = require('express')
+var app = express()
+app.get('*', function(req, res) {
+  res.end('Hello World!')
+})
+app.listen(process.argv[2])
+
+uses wildcard (*) in place of '/home'
+
 Master Express.js and have fun!
 ─────────────────────────────────
  HELLO WORLD!
