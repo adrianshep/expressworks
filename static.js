@@ -9,6 +9,19 @@ app.listen(process.argv[2] || 3000)
 
 /*
 
+Here's the official solution in case you want to compare notes:
+
+────────────────────────────────────────────────────────────────────────────────
+    var path = require('path')
+    var express = require('express')
+    var app = express()
+
+    app.use(express.static(process.argv[3]||path.join(__dirname, 'public')));
+
+    app.listen(process.argv[2])
+
+────────────────────────────────────────────────────────────────────────────────
+
 STATIC
  Exercise 2 of 8
 
