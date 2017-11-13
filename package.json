@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/adrianshep/expressworks/issues"
   },
-  "homepage": "https://github.com/adrianshep/expressworks#readme"
+  "homepage": "https://github.com/adrianshep/expressworks#readme",
+  "dependencies": {
+    "jade": "^1.11.0",
+    "pug": "^2.0.0-rc.4"
+  }
 }
