@@ -10,6 +10,38 @@ app.listen(process.argv[2])
 
 /*
 
+
+Error: Cannot find module 'jade'
+    at Function.Module._resolveFilename (module.js:470:15)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at new View (/Users/adrianshepelavey/node_modules/express/lib/view.js:81:14)
+    at Function.render (/Users/adrianshepelavey/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/Users/adrianshepelavey/node_modules/express/lib/response.js:1008:7)
+    at /Users/adrianshepelavey/nodeschool/expressworks/pug.js:6:7
+    at Layer.handle [as handle_request] (/Users/adrianshepelavey/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/adrianshepelavey/node_modules/express/lib/router/route.js:137:13)
+
+Your submission results compared to the expected:
+
+                 ACTUAL                                 EXPECTED
+────────────────────────────────────────────────────────────────────────────────
+
+   "<!DOCTYPE html>"                   !=    "<h1>Hello World</h1><p>Today is Mon Nov 13 2017.</p>"
+   "<head>"                            !=
+   "<meta charset=\"utf-8\">"          !=
+   "<title>Error</title>"              !=
+   "</head>"                           !=
+   "<body>"                            !=
+   "<pre>Error: Cannot find module &#39;jade&#39;<br> &nbsp; &nbsp;at Function.Module._resolveFilename (module.js:470:15)<br> &nbsp; &nbsp;at Function.Module._load (module.js:418:25)<br> &nbsp; &nbsp;at Module.require (module.js:498:17)<br> &nbsp; &nbsp;at require (internal/module.js:20:19)<br> &nbsp; &nbsp;at new View (/Users/adrianshepelavey/node_modules/express/lib/view.js:81:14)<br> &nbsp; &nbsp;at Function.render (/Users/adrianshepelavey/node_modules/express/lib/application.js:570:12)<br> &nbsp; &nbsp;at ServerResponse.render (/Users/adrianshepelavey/node_modules/express/lib/response.js:1008:7)<br> &nbsp; &nbsp;at /Users/adrianshepelavey/nodeschool/expressworks/pug.js:6:7<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/Users/adrianshepelavey/node_modules/express/lib/router/layer.js:95:5)<br> &nbsp; &nbsp;at next (/Users/adrianshepelavey/node_modules/express/lib/router/route.js:137:13)</pre>" !=
+   "</body>"                           !=
+   "</html>"                           !=
+   ""                                  !=
+
+────────────────────────────────────────────────────────────────────────────────
+
+
 PUG
  Exercise 3 of 8
 
